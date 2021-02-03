@@ -42,7 +42,7 @@ Creating docker file:
 
 `$ touch Dockerfile`
 
-After creating Dockerfile put in it the content below:
+After creating Dockerfile (image instructions' file) put in it the content below:
 
 ```# Pull base image
 FROM python:3.8.5
@@ -65,11 +65,15 @@ RUN pip install pipenv && pipenv install --system
 COPY . /django_project/
 ```
 
+Building image:
+
+`% docker build .`
+
 To create docker-composer.yml file:
 
 `$ touch docker-composer.yml`
 
-docker-compose.yml file should contain the following code:
+docker-compose.yml file (to control how to run the container) should contain the following code:
 
 ```
 version: '3.8' # recent version of Docker Compose
