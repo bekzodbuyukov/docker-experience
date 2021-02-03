@@ -19,10 +19,10 @@ In activated environment's shell enter:
 
 `(venv) $ django-admin startproject django_project`
 
-Use `migrate` to initialize the database:
+Use **migrate** to initialize the database:
 
 `$ python manage.py migrate`
 
-Command `runserver` to start local web server:
+Command **runserver** to start local web server:
 
 `$ python manage.py runserver`
