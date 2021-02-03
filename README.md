@@ -6,6 +6,8 @@ How to create new virtual enivornment with Django
 
 `$ pipenv install django`
 
+As a result you should get new files: **Pipfile** and **Pipfile.lock**
+
 To activate created virtual environment
 
 `$ pipenv shell`
