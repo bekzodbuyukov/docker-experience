@@ -69,9 +69,9 @@ Building image:
 
 `% docker build .`
 
-To create docker-composer.yml file:
+To create docker-compose.yml file:
 
-`$ touch docker-composer.yml`
+`$ touch docker-compose.yml`
 
 docker-compose.yml file (to control how to run the container) should contain the following code:
 
