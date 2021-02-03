@@ -68,3 +68,18 @@ COPY . /django_project/
 To create docker-composer.yml file:
 
 `$ touch docker-composer.yml`
+
+docker-compose.yml file should contain the following code:
+
+```
+version: '3.9'
+
+services:
+  web:
+    build: .
+    command: python /django_project/manage.py runserver 127.0.0.1:8000
+    volumes:
+      - .:/django_project
+    ports: 
+      - 8000:8000
+```
