@@ -21,8 +21,8 @@ In activated environment's shell enter:
 
 Use **migrate** to initialize the database:
 
-`$ python manage.py migrate`
+`(venv) $ python manage.py migrate`
 
 Command **runserver** to start local web server:
 
-`$ python manage.py runserver`
+`(venv) $ python manage.py runserver`
