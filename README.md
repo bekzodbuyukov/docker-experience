@@ -42,7 +42,7 @@ Creating docker file:
 
 `$ touch Dockerfile`
 
-After creating Dockerfile put in it content below:
+After creating Dockerfile put in it the content below:
 
 ```# Pull base image
 FROM python:3.8.5
