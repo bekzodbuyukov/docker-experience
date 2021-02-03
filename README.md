@@ -10,4 +10,4 @@ To activate created virtual environment
 
 `$ pipenv shell`
 
-*P.S.*: If something went wrong in Linux, just try this commands with `sudo`.
+**P.S.**: If something went wrong in Linux, just try this commands with `sudo`.
