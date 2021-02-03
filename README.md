@@ -62,6 +62,6 @@ COPY Pipfile Pipfile.lock /django_project/
 RUN pip install pipenv && pipenv install --system
 
 # Copy project
-COPY . /django_project/```
+COPY . /django_project/
+```
 
-Continue
