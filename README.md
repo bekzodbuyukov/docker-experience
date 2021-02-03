@@ -72,14 +72,14 @@ To create docker-composer.yml file:
 docker-compose.yml file should contain the following code:
 
 ```
-version: '3.9'
+version: '3.9' # recent version of Docker Compose
 
-services:
+services: # services we want to have running within our Docker host
   web:
-    build: .
-    command: python /django_project/manage.py runserver 127.0.0.1:8000
-    volumes:
+    build: . # Dockerfile directory (. - directory, where docker-compose.yml is located)
+    command: python /django_project/manage.py runserver 127.0.0.1:8000 # command to start up the local server
+    volumes: # for mounting automatically sync the Docker filesystem with our local computer's filesystem
       - .:/django_project
-    ports: 
+    ports: # ports to expose within Docker
       - 8000:8000
 ```
