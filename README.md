@@ -74,13 +74,18 @@ docker-compose.yml file should contain the following code:
 ```
 version: '3.8' # recent version of Docker Compose
 
-services: # services we want to have running within our Docker host
+# services we want to have running within our Docker host
+services:
   web:
-    build: . # Dockerfile directory (. - directory, where docker-compose.yml is located)
-    command: python django_project/manage.py runserver 0.0.0.0:8000 # command to start up the local server
-    volumes: # for mounting automatically sync the Docker filesystem with our local computer's filesystem
+    # Dockerfile directory (. - directory, where docker-compose.yml is located)
+    build: .
+    # command to start up the local server
+    command: python django_project/manage.py runserver 0.0.0.0:8000
+    # for mounting automatically sync the Docker filesystem with our local computer's filesystem
+    volumes:
       - .:/django_project
-    ports: # ports to expose within Docker
+    # ports to expose within Docker
+    ports:
       - 8000:8000
 ```
 
@@ -95,3 +100,5 @@ To stop the Docker container use hotkey in terminal:
 To stop Docker container at all:
 
 `$ docker-compose down`
+
+> Using book **Django for Professionals** by _William S. Vincent_
