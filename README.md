@@ -65,3 +65,6 @@ RUN pip install pipenv && pipenv install --system
 COPY . /django_project/
 ```
 
+To create docker-composer.yml file:
+
+`$ touch docker-composer.yml`
