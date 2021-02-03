@@ -14,6 +14,10 @@ To activate created virtual environment:
 
 **P.S.**: If something went wrong on a Linux, just try this commands with `sudo`.
 
+To stop virtual environment:
+
+`(venv) $ exit `
+
 ## Creating Django project
 In activated environment's shell enter:
 
@@ -26,3 +30,9 @@ Use **migrate** to initialize the database:
 Command **runserver** to start local web server:
 
 `(venv) $ python manage.py runserver`
+
+Creating specific app, named pages:
+
+`(venv) $ python manage.py startapp pages`
+
+**P.S.**: Don't forget to include created app in django_project/settings.py file in list **INSTALLED_APPS**.
