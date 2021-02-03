@@ -44,8 +44,7 @@ Creating docker file:
 
 After creating Dockerfile put in it content below:
 
-``
-# Pull base image
+``# Pull base image
 FROM python:3.8.5
 
 # Set environment variables
@@ -63,5 +62,4 @@ COPY Pipfile Pipfile.lock /django_project/
 RUN pip install pipenv && pipenv install --system
 
 # Copy project
-COPY . /django_project/
-``
+COPY . /django_project/``
