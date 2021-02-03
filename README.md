@@ -83,3 +83,7 @@ services: # services we want to have running within our Docker host
     ports: # ports to expose within Docker
       - 8000:8000
 ```
+
+To run Docker container:
+
+`$ docker-compose up`
