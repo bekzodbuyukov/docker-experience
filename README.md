@@ -1,5 +1,5 @@
 # docker-experience
-To get experience of using Docker
+To get an experience of using Docker
 
 General pattern (algorithm):
 - create a virtual environment locally and install Django
