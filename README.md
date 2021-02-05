@@ -67,7 +67,7 @@ COPY . /django_project/
 
 Building image:
 
-`% docker build .`
+`$ docker build .`
 
 To create docker-compose.yml file:
 
@@ -110,7 +110,8 @@ If we preface traditional commands with `docker-compose exec [service]` like:
 
 `$ docker-compose exec web python manage.py createsuperuser`
 
-we can run commands through Docker. Each file change within Docker will be automatically
-synced/copied over into a file on our local computer. 
+we can run commands through Docker.
+
+**P.S.:** Each file change within Docker will be automatically synced/copied over into a file on our local computer. 
 
 > Using book **Django for Professionals** by _William S. Vincent_
