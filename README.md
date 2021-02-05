@@ -2,11 +2,11 @@
 To get an experience of using Docker
 
 General pattern (algorithm):
-- create a virtual environment locally and install Django
-- create a new project
-- exit the virtual environment
-- write a Dockerfile and then build the initial image
-- write a docker-compose.yml file and run the container with docker-compose up
+1. create a virtual environment locally and install Django
+2. create a new project
+3. exit the virtual environment
+4. write a Dockerfile and then build the initial image
+5. write a docker-compose.yml file and run the container with docker-compose up
 
 ## Setting virtual environment
 How to create new virtual enivornment with Django:
