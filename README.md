@@ -93,7 +93,7 @@ services:
       - 8000:8000
 ```
 
-To run Docker container:
+To run Docker container (use -d flag if you want to run in detached mode):
 
 `$ docker-compose up`
 
@@ -104,5 +104,13 @@ To stop the Docker container use hotkey in terminal:
 To stop Docker container at all:
 
 `$ docker-compose down`
+
+## Additional information
+If we preface traditional commands with `docker-compose exec [service]` like:
+
+`$ docker-compose exec web python manage.py createsuperuser`
+
+we can run commands through Docker. Each file change within Docker will be automatically
+synced/copied over into a file on our local computer. 
 
 > Using book **Django for Professionals** by _William S. Vincent_
