@@ -22,7 +22,7 @@ ModuleNotFoundError: No module named 'virtualenv.seed.embed.via_app_data'
 ...
 ```
 
-look [there](https://stackoverflow.com/a/65845074/15165438) for problem solution.
+look [there](https://stackoverflow.com/a/65845074/15165438) for solution.
 
 To install Django:
 
