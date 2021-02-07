@@ -9,17 +9,28 @@ General pattern (algorithm):
 5. write a docker-compose.yml file and run the container with docker-compose up
 
 ## Setting virtual environment
-How to create new virtual enivornment with Django:
+To create new virtual enivornment:
 
-`$ pipenv install django`
+`$ pipenv shell`
 
 As a result you should get new files: **Pipfile** and **Pipfile.lock**
+
+To install Django:
+
+`$ pipenv install django`
 
 To activate created virtual environment:
 
 `$ pipenv shell`
 
-**P.S.**: If something went wrong on a Linux, just try this commands with `sudo`.
+**P.S.**: If you got an error:
+
+```
+ModuleNotFoundError: No module named 'virtualenv.seed.embed.via_app_data'
+...
+```
+
+look [there](https://stackoverflow.com/a/65845074/15165438) for problem solution.
 
 To stop virtual environment:
 
