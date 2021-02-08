@@ -2,11 +2,11 @@
 To get an experience of using Docker
 
 General pattern (algorithm):
-1. [create a virtual environment locally and install Django](setting-virtual-environment)
-2. [create a new project](creating-django-project)
+1. [create a virtual environment locally and install Django](#setting-virtual-environment)
+2. [create a new project](#creating-django-project)
 3. exit the virtual environment
-4. write a Dockerfile and then build the initial image
-5. write a docker-compose.yml file and run the container with docker-compose up
+4. [write a Dockerfile and then build the initial image](#setting-docker)
+5. [write a docker-compose.yml file and run the container with docker-compose up](#setting-docker)
 
 ## Setting virtual environment
 To create new virtual environment:
@@ -62,7 +62,7 @@ Creating docker file:
 
 After creating Dockerfile (image instructions' file) put in it the content below:
 
-```docker
+```dockerfile
 # Pull base image
 FROM python:3.8.5
 
@@ -94,7 +94,7 @@ To create docker-compose.yml file:
 
 docker-compose.yml file (to control how to run the container) should contain the following code:
 
-```
+```docker-compose
 version: '3.8' # recent version of Docker Compose
 
 # services we want to have running within our Docker host
@@ -114,7 +114,9 @@ services:
 
 To run Docker container (use -d flag if you want to run in detached mode):
 
-`$ docker-compose up`
+```bash
+$ docker-compose up
+```
 
 To stop the Docker container use hotkey in terminal:
 
