@@ -11,13 +11,15 @@ General pattern (algorithm):
 ## Setting virtual environment
 To create new virtual environment:
 
-`$ pipenv shell`
+```bash
+$ pipenv shell
+```
 
 As a result you should get new files: **Pipfile** and **Pipfile.lock**
 
 If you got an error:
 
-```
+```bash
 ModuleNotFoundError: No module named 'virtualenv.seed.embed.via_app_data'
 ...
 ```
@@ -26,39 +28,55 @@ look [there](https://stackoverflow.com/a/65845074/15165438) for solution.
 
 To install Django:
 
-`$ pipenv install django`
+```bash
+$ pipenv install django
+```
 
 To activate created virtual environment:
 
-`$ pipenv shell`
+```bash
+$ pipenv shell
+```
 
 To stop virtual environment:
 
-`(venv) $ exit `
+```bash
+(venv) $ exit
+```
 
 ## Creating Django project
 In activated environment's shell enter:
 
-`(venv) $ django-admin startproject django_project`
+```bash
+(venv) $ django-admin startproject django_project
+```
 
 Use **migrate** to initialize the database:
 
-`(venv) $ python manage.py migrate`
+```bash
+(venv) $ python manage.py migrate
+```
 
 Command **runserver** to start local web server:
 
-`(venv) $ python manage.py runserver`
+```bash
+(venv) $ python manage.py runserver
+```
 
 Creating specific app, named pages:
 
-`(venv) $ python manage.py startapp pages`
+```bash
+(venv) $ python manage.py startapp pages
+```
 
 **P.S.**: Don't forget to include created app in django_project/settings.py file in list **INSTALLED_APPS**.
 
 ## Setting Docker
 Creating docker file:
 
-`$ touch Dockerfile`
+```bash
+$ touch Dockerfile
+```
 
 After creating Dockerfile (image instructions' file) put in it the content below:
 
@@ -86,15 +104,19 @@ COPY . /django_project/
 
 Building image:
 
-`$ docker build .`
+```bash
+$ docker build .
+```
 
 To create docker-compose.yml file:
 
-`$ touch docker-compose.yml`
+```bash
+$ touch docker-compose.yml
+```
 
 docker-compose.yml file (to control how to run the container) should contain the following code:
 
-```docker-compose
+```yaml
 version: '3.8' # recent version of Docker Compose
 
 # services we want to have running within our Docker host
@@ -124,12 +146,16 @@ To stop the Docker container use hotkey in terminal:
 
 To stop Docker container at all:
 
-`$ docker-compose down`
+```console
+$ docker-compose down
+```
 
 ## Additional information
 If we preface traditional commands with `docker-compose exec [service]` like:
 
-`$ docker-compose exec web python manage.py createsuperuser`
+```console
+$ docker-compose exec web python manage.py createsuperuser
+```
 
 we can run commands through Docker.
 
