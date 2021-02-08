@@ -11,7 +11,7 @@ General pattern (algorithm):
 ## Setting virtual environment
 To create new virtual environment:
 
-```bash
+```console
 $ pipenv shell
 ```
 
@@ -126,7 +126,8 @@ services:
     build: .
     # command to start up the local server
     command: python django_project/manage.py runserver 0.0.0.0:8000
-    # for mounting automatically sync the Docker filesystem with our local computer's filesystem
+    # for mounting automatically sync the Docker filesystem
+    # with our local computer's filesystem
     volumes:
       - .:/django_project
     # ports to expose within Docker
