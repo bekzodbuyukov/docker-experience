@@ -11,7 +11,7 @@ General pattern (algorithm):
 ## Setting virtual environment
 To create new virtual environment:
 
-```console
+```bash
 $ pipenv shell
 ```
 
@@ -147,14 +147,14 @@ To stop the Docker container use hotkey in terminal:
 
 To stop Docker container at all:
 
-```console
+```bash
 $ docker-compose down
 ```
 
 ## Additional information
 If we preface traditional commands with `docker-compose exec [service]` like:
 
-```console
+```bash
 $ docker-compose exec web python manage.py createsuperuser
 ```
 
