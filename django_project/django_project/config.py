@@ -1,12 +1,12 @@
 import environ
 
 
-# making env
+# # making env
 env = environ.Env()
 
 # reading .env file
-environ.Env.read_env('../.env')
+env.read_env()
 
-# getting values
-DEBUG = env('DEBUG')
-SECRET_KEY = env('SECRET_KEY')
+#  # getting values
+DEBUG = env('DEBUG', default=True)
+SECRET_KEY = env('SECRET_KEY', default="NEED SECRET KEY")
