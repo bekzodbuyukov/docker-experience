@@ -141,6 +141,8 @@ To run Docker container (use -d flag if you want to run in detached mode):
 $ docker-compose up
 ```
 
+**P.S.**: When software packages are updated, you should run command above with flag --build, you will force Docker to build a new image. By default, Docker looks for a local cached copy of software to improve performance.
+
 To stop the Docker container use hotkey in terminal:
 
 `Control+C`
