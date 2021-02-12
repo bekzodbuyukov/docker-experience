@@ -69,7 +69,7 @@ Creating specific app, named pages:
 (venv) $ python manage.py startapp pages
 ```
 
-**P.S.**: Don't forget to include created app in django_project/settings.py file in list **INSTALLED_APPS**.
+**P.S.**: Don't forget to include created app in **django_project/settings.py** file in list **INSTALLED_APPS**.
 
 ## Setting Docker
 Creating docker file:
@@ -114,7 +114,7 @@ To create docker-compose.yml file:
 $ touch docker-compose.yml
 ```
 
-docker-compose.yml file (to control how to run the container) should contain the following code:
+**docker-compose.yml** file (to control how to run the container) should contain the following code:
 
 ```yaml
 version: '3.8' # recent version of Docker Compose
@@ -135,13 +135,13 @@ services:
       - 8000:8000
 ```
 
-To run Docker container (use -d flag if you want to run in detached mode):
+To run Docker container (use `-d` or `-detach` flag if you want to run in detached mode):
 
 ```bash
 $ docker-compose up
 ```
 
-**P.S.**: When software packages are updated, you should run command above with flag --build, you will force Docker to build a new image. By default, Docker looks for a local cached copy of software to improve performance.
+**P.S.**: When software packages are updated, you should run command above with flag `--build`, you will force Docker to build a new image. By default, Docker looks for a local cached copy of software to improve performance.
 
 To stop the Docker container use hotkey in terminal:
 
