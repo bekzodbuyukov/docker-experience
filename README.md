@@ -108,7 +108,7 @@ Building image:
 $ docker build .
 ```
 
-To create docker-compose.yml file:
+To create **docker-compose.yml** file:
 
 ```bash
 $ touch docker-compose.yml
