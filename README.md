@@ -54,19 +54,19 @@ In activated environment's shell enter:
 Use **migrate** to initialize the database:
 
 ```bash
-(venv) django_project $ python manage.py migrate
+(venv) ../django_project $ python manage.py migrate
 ```
 
 Command **runserver** to start local web server:
 
 ```bash
-(venv) django_project $ python manage.py runserver
+(venv) ../django_project $ python manage.py runserver
 ```
 
 Creating specific app, named pages:
 
 ```bash
-(venv) django_project $ python manage.py startapp pages
+(venv) ../django_project $ python manage.py startapp pages
 ```
 
 **P.S.**: Don't forget to include created app in **django_project/settings.py** file in list **INSTALLED_APPS**.
