@@ -54,19 +54,19 @@ In activated environment's shell enter:
 Use **migrate** to initialize the database:
 
 ```bash
-(venv) $ python manage.py migrate
+(venv) $ python django_project/manage.py migrate
 ```
 
 Command **runserver** to start local web server:
 
 ```bash
-(venv) $ python manage.py runserver
+(venv) $ python django_project/manage.py runserver
 ```
 
 Creating specific app, named pages:
 
 ```bash
-(venv) $ python manage.py startapp pages
+(venv) $ python django_project/manage.py startapp pages
 ```
 
 **P.S.**: Don't forget to include created app in **django_project/settings.py** file in list **INSTALLED_APPS**.
@@ -157,7 +157,7 @@ $ docker-compose down
 If we preface traditional commands with `docker-compose exec [service]` like:
 
 ```bash
-$ docker-compose exec web python manage.py createsuperuser
+$ docker-compose exec web python django_project/manage.py createsuperuser
 ```
 
 we can run commands through Docker.
